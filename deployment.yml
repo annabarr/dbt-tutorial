@@ -28,7 +28,7 @@ jobs:
      - name: version
        command: dbt --version
 
-- name: cron-demo
+- name: cron_demo
   schedule: 30 7 * * 1-5
   steps:
     - name: demo SQL
