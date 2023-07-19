@@ -26,8 +26,8 @@ jobs:
      - name: version
        command: dbt --version
 
-  - name: cron_demo
-    schedule: 30 7 * * 1-5
-    steps:
-      - name: demo SQL
-        command: dbt run --select products
+ - name: cron_test
+   schedule: 30 7 * * 1-5
+   steps:
+     - name: demo SQL
+       command: dbt run --select products
