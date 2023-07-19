@@ -29,7 +29,7 @@ jobs:
        command: dbt --version
 
 - name: cron_demo
-  schedule: 30 7 * * 1-5
+  schedule: '30 7 * * 1-5'
   steps:
     - name: demo SQL
-      command: dbt select --
+      command: dbt run --select products
